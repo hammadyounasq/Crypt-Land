@@ -35,6 +35,7 @@ const Customers = () => {
   ];
 
   return (
+    // <div className="bg-[#F2F4F5] py-20">
     <div className="bg-[#F2F4F5] py-20">
       <div className="max-w-7xl mx-auto px-4">
         {/* Heading Section */}
