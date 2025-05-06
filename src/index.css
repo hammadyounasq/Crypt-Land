@@ -47,3 +47,225 @@ body {
     }
   }
 }
+/* Animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes rotateIn {
+  from {
+    opacity: 0;
+    transform: rotate(-15deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes barSlide {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes svgDraw {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pathDraw {
+  0% {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Animation classes */
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+.animate-fade-in-delayed {
+  animation: fadeIn 0.8s ease-in-out 0.3s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-scale {
+  animation: fadeInScale 0.8s ease-in-out forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.8s ease-in-out forwards;
+}
+
+.animate-slide-up-delayed {
+  animation: slideUp 0.8s ease-in-out 0.3s forwards;
+  opacity: 0;
+}
+
+.animate-slide-up-delayed-2 {
+  animation: slideUp 0.8s ease-in-out 0.6s forwards;
+  opacity: 0;
+}
+
+.animate-bounce-in {
+  animation: bounceIn 0.8s ease-in-out forwards;
+}
+
+.animate-bounce-in-delayed {
+  animation: bounceIn 0.8s ease-in-out 0.3s forwards;
+  opacity: 0;
+}
+
+.animate-rotate-in {
+  animation: rotateIn 0.8s ease-in-out forwards;
+}
+
+.animate-rotate-in-delayed {
+  animation: rotateIn 0.8s ease-in-out 0.3s forwards;
+  opacity: 0;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.5s ease-in-out forwards;
+}
+
+.animate-scale-in-delayed {
+  animation: scaleIn 0.5s ease-in-out 0.2s forwards;
+  transform: scale(0);
+}
+
+.animate-scale-in-delayed-2 {
+  animation: scaleIn 0.5s ease-in-out 0.4s forwards;
+  transform: scale(0);
+}
+
+.animate-scale-in-delayed-3 {
+  animation: scaleIn 0.5s ease-in-out 0.6s forwards;
+  transform: scale(0);
+}
+
+.animate-scale-in-delayed-4 {
+  animation: scaleIn 0.5s ease-in-out 0.8s forwards;
+  transform: scale(0);
+}
+
+.animate-bar-slide {
+  animation: barSlide 1s ease-in-out forwards;
+  width: 0;
+}
+
+.animate-bar-slide-delayed {
+  animation: barSlide 1s ease-in-out 0.3s forwards;
+  width: 0;
+}
+
+.animate-bar-slide-delayed-2 {
+  animation: barSlide 1s ease-in-out 0.6s forwards;
+  width: 0;
+}
+
+.animate-svg-draw {
+  animation: svgDraw 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+.animate-path-draw {
+  animation: pathDraw 2s ease-in-out forwards;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
+
+.animate-path-draw-delayed {
+  animation: pathDraw 2s ease-in-out 0.5s forwards;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
+
+.animate-toggle-slide {
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 640px) {
+  .animate-bounce-in,
+  .animate-bounce-in-delayed,
+  .animate-fade-in-scale {
+    animation-duration: 0.6s;
+  }
+
+  .animate-slide-up,
+  .animate-slide-up-delayed,
+  .animate-slide-up-delayed-2 {
+    animation-duration: 0.6s;
+  }
+}
+
+@media (max-width: 480px) {
+  .animate-fade-in,
+  .animate-fade-in-delayed {
+    animation-duration: 0.5s;
+  }
+}

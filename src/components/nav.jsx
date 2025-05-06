@@ -26,7 +26,7 @@ const Nav = () => {
 
           {/* Logo in center */}
           <div className="flex items-center space-x-2">
-            <div className="w-6 h-6 bg-green-400 rounded"></div>
+            <img className="w-6 h-6rounded" src="logo.png" alt="Logo" />
             <span className="text-xl font-semibold">Crypt Land</span>
           </div>
 
@@ -41,7 +41,7 @@ const Nav = () => {
             <a href="#" className="text-sm hover:text-gray-200">
               Login
             </a>
-            <button className="bg-green-400 text-white px-4 py-2 rounded-full text-sm hover:bg-green-500 transition-colors">
+            <button className="bg-[#A3DC2F] text-black px-4 py-2 rounded-full text-sm transition-colors">
               Sign up
             </button>
           </div>
@@ -51,7 +51,7 @@ const Nav = () => {
         <div className="lg:hidden flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-6 h-6 bg-green-400 rounded"></div>
+            <img className="w-6 h-6rounded" src="logo.png" alt="Logo" />
             <span className="text-xl font-semibold">Crypt Land</span>
           </div>
 
@@ -103,7 +103,7 @@ const Nav = () => {
               <a href="#" className="text-sm hover:text-gray-200">
                 Login
               </a>
-              <button className="bg-green-400 text-white px-4 py-2 rounded-full text-sm hover:bg-green-500 transition-colors w-full">
+              <button className="bg-[#A3DC2F] text-white px-4 py-2 rounded-full text-sm hover:bg-green-500 transition-colors w-full">
                 Sign up
               </button>
             </div>
