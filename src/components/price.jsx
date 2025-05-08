@@ -440,7 +440,7 @@ const AnimatedPrice = () => {
               </motion.p>
             </div>
             <motion.button
-              className="w-full bg-[#A9DE3C] text-white rounded-full py-4 mt-8 hover:bg-opacity-90 transition-colors"
+              className="w-full bg-[#A3DC2F] text-black rounded-full py-4 mt-8 hover:bg-opacity-90 transition-colors"
               variants={buttonVariants}
               initial="hidden"
               animate={controls}

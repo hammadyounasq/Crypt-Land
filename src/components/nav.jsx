@@ -103,7 +103,7 @@ const Nav = () => {
               <a href="#" className="text-sm hover:text-gray-200">
                 Login
               </a>
-              <button className="bg-[#A3DC2F] text-white px-4 py-2 rounded-full text-sm hover:bg-green-500 transition-colors w-full">
+              <button className="bg-[#A3DC2F] text-white px-4 py-2 rounded-full text-sm hover:bg-[#8CC22A]  transition-colors w-full">
                 Sign up
               </button>
             </div>

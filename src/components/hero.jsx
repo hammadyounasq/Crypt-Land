@@ -110,14 +110,14 @@ const Hero = () => {
           </motion.p>
 
           {/* Search Bar with animation */}
-          <div className="w-full p-4 flex justify-center items-center">
+          <div className="w-full p-0 flex justify-center items-center">
             <div className="w-full max-w-xl bg-white rounded-full overflow-hidden shadow-md flex flex-row lg:flex-row sm:flex-row">
               <input
                 type="email"
                 placeholder="Enter your email address"
                 className="flex-1 px-4 py-3 text-gray-600 text-sm sm:text-base sm:text-[5px]  lg:text-[1rem]  text-[7px] outline-none"
               />
-              <button className="  lg:my-1 md:my-1 my-1 mx-1 sm:mt-0 sm:ml-2 px-6 py-3 rounded-full bg-[#A3DC2F] text-black font-medium text-sm text-[7px] sm:text-base whitespace-nowrap">
+              <button className="  lg:my-1 md:my-1 my-1 mx-1 sm:mt-0 sm:ml-2 px-4 py-3 rounded-full bg-[#A3DC2F] text-black font-medium text-sm text-[7px] sm:text-base whitespace-nowrap">
                 Book a Demo
               </button>
             </div>
